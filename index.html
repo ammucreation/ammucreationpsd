@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download high-quality wedding album PSD templates for photographers and designers at AMMU CREATION. Our customizable templates make it easy to create stunning wedding albums with professional designs. Perfect for wedding photographers and album designers looking for premium PSD templates.">
+    <title>AMMU CREATION PSD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <script>
+        // Prevent Right Click
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+            alert('Right-click is disabled on this page');
+        });
+
+        // Prevent Text Selection (Optional for more protection)
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable full-screen mode on video
+        var video = document.querySelector('video');
+        video.addEventListener('fullscreenchange', function () {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        });
+
+        // Optionally, detect and prevent screen capture events (Limited)
+        if (navigator.mediaDevices && navigator.mediaDevices.enumerateDevices) {
+            navigator.mediaDevices.enumerateDevices().then(devices => {
+                devices.forEach(device => {
+                    if (device.kind === 'videoinput') {
+                        // Block screen capturing (For some specific use-cases)
+                        device.deviceId = '';
+                    }
+                });
+            });
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+            background: linear-gradient(45deg, #00bfa5, #00695c);
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #c1f0dc;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #e0f7fa, #80cbc4);
+            color: #004d40;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #004d40;
+        }
+        .hero button {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            background: #00796b;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .hero button:hover {
+            background: #004d40;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 3rem;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 25px;
+            width: 420px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 0.8rem;
+        }
+        .product h3 {
+            font-size: 1.6rem;
+            color: #00796b;
+            margin-bottom: 0.5rem;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #388e3c;
+            font-weight: 700;
+        }
+        .discounted-price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: #d32f2f;
+            margin-bottom: 1rem;
+        }
+        .buttons a {
+            text-decoration: none;
+        }
+        .buttons button {
+            margin: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.9rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: #ff9800;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .buttons button:hover {
+            background: #ef6c00;
+        }
+        .contact-details {
+            padding: 3rem 1rem;
+            background-color: #e0f2f1;
+            text-align: center;
+            color: #004d40;
+        }
+        .contact-details h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .contact-details p {
+            margin: 0.5rem 0;
+        }
+        .social-links a {
+            margin: 0 1rem;
+            font-size: 1.8rem;
+            color: #00796b;
+            transition: transform 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            padding: 1.5rem 1rem;
+            background: #004d40;
+            color: #fff;
+            text-align: center;
+        }
+        footer button {
+            margin-top: 1rem;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            background: #00bfa5;
+            color: #fff;
+            cursor: pointer;
+        }
+        footer button:hover {
+            background: #00796b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero button {
+                font-size: 0.9rem;
+                padding: 0.8rem 2rem;
+            }
+            .products {
+                padding: 2rem 1rem;
+                gap: 1.2rem;
+            }
+            .product {
+                width: 100%;
+                padding: 1.2rem;
+            }
+            .product img {
+                height: 180px;
+            }
+            .contact-details {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .hero button {
+                font-size: 0.8rem;
+                padding: 0.7rem 1.5rem;
+            }
+            .contact-details h3 {
+                font-size: 1.5rem;
+            }
+            .contact-details p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Marquee style for images */
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .marquee {
+            display: flex;
+            flex-direction: row;
+            animation: marquee 10s linear infinite;
+        }
+        .marquee img {
+            width: 275px;
+            height: 155px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+            
+        }        
+
+        /* Styling for Product Description Section */
+        .product-description {
+            background-color: #f0f8ff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .description-container h2 {
+            font-size: 2.2rem;
+            color: #00796b;
+            margin-bottom: 1rem;
+        }
+        .description-container p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Body Section -->
+
+<body>
+    <header>
+        <div class="logo">AMMU CREATION PSD</div>
+        <nav>
+            <ul>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to AMMU CREATION</h1>
+        <p>Your one-stop shop for the latest products and deals!</p><br>  
+            <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - I Want All PSD..!" target="_blank">
+            <button>Buy All PSD - Rs.1200 /-</button>
+        </a><br>
+        <p>All PSD 15 X 24, 12 X 36 - Total ( 415 PSD ), More then 100GB.. </p>
+    </section>
+
+    <!-- Marquee Image Section -->
+    <section class="marquee-wrapper">
+        <div class="marquee">
+
+            <img src="images/offer's/15 X 24.jpg" alt="Album 1">
+            <img src="images/marquee_image/001.jpg" alt="Album 1">
+            <img src="images/marquee_image/002.jpg" alt="Album 2">
+            <img src="images/marquee_image/003.jpg" alt="Album 3">
+            <img src="images/marquee_image/004.jpg" alt="Album 4">
+            <img src="images/marquee_image/005.jpg" alt="Album 5">
+            <img src="images/marquee_image/006.jpg" alt="Album 6">
+            <img src="images/marquee_image/007.jpg" alt="Album 7">
+            <img src="images/marquee_image/008.jpg" alt="Album 8">
+            <img src="images/marquee_image/009.jpg" alt="Album 9">
+            
+        </div>
+    </section>
+
+    <!-- Product Description Section -->
+    <section class="product-description">
+        <div class="description-container">
+            <h2>Featured Wedding Album PSD Templates</h2>
+            <p>Explore our exclusive collection of high-quality PSD templates designed specifically for wedding photographers and album designers. Our templates are customizable, making it easier for you to create beautiful and professional wedding albums. Perfect for those looking to save time while delivering stunning results to clients. Get started today with our latest products!</p>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section class="products">
+
+
+        <!-- Product Offer's -->
+        <div class="product">
+            <img src="images/offer's/15 X 24.jpg" alt="15 X 24 PSD">
+            <h3>2025 - New 15 X 24</h3>
+            <p class="price">&#8377;299 christmas offer</p>
+            <p class="discounted-price">&#8377;1200</p>
+            <p class="description">Size (15 X 24), Resolution (300dpi), Total PSD (100 PSD), 8.5 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - 15 X 24 (100 PSD) - Christmas Offer" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1HwmbN9TEMqukWP7s-FMthza1MOEYqvkx/view?usp=drive_link" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="images/15x24(1).jpg" alt="15 X 24 PSD">
+            <h3>2025 - New 15 X 24</h3>
+            <p class="price">&#8377;699</p>
+            <p class="discounted-price">&#8377;1200</p>
+            <p class="description">Size (15 X 24), Resolution (300dpi), Total PSD (100 PSD), 8.5 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - 15 X 24 (100 PSD)" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1HwmbN9TEMqukWP7s-FMthza1MOEYqvkx/view?usp=drive_link" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="images/12x36_all_psd.jpg" alt="12 X 36 PSD">
+            <h3>2024 - 12 X 36 All PSD</h3>
+            <p class="price">&#8377;499</p>
+            <p class="discounted-price">&#8377;1000</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (315 PSD ), 95.1 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - 12 X 36 ( All 315 PSD)" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1ZHtI9Up1tBJ-q_ToQagiYztc1awZhAzH/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="images/bride.jpg" alt="Bride PSD">
+            <h3>Bride 12 X 36 PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (45 PSD), 13 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Bride PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1gEYdmQTvDLW2D7280n4teHdPzqvt6GtP/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="images/couple.jpg" alt="Bride PSD">
+            <h3>Couple 12 X 36 PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (50 PSD), 14.7 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Couple PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1JPBl2Fis5x4Sm9Xlz7fUY2DQLI4uXkXU/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="images/groom.jpg" alt="Groom PSD">
+            <h3>Groom 12 X 36 PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (16 PSD), 16 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Groom PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1_EKwIKbaeVc_445NifRisAcXfCPqxcTV/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="images/part1.jpg" alt="Group 1 PSD">
+            <h3>Group ( 1 ) PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (49 PSD), 15 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Group ( 1 ) PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1L74UGu9Gr6uJvIKrd7pBT8VPVEuYdjND/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="images/part2.jpg" alt="Group 2 PSD">
+            <h3>Group ( 2 ) PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (40 PSD), 11.5 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Group ( 2 ) PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1aifXAu5mZe--rErY1ucw6ejN06P-NOUT/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="images/part3.jpg" alt="Group 3 PSD">
+            <h3>Group ( 3 ) PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (30 PSD), 11.7 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Group ( 3 ) PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1mdn0ClJtExn4GoUvrPJCx8nz--FxAm2I/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="images/part4.jpg" alt="Group 4 PSD">
+            <h3>Group ( 4 ) PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (35 PSD), 9.12 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Group ( 4 ) PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1RinxnfrXXUfGjcURkBLqrSCMrsRk6Gm8/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product">
+            <img src="images/part5.jpg" alt="Group 5 PSD">
+            <h3>Group ( 5 ) PSD</h3>
+            <p class="price">&#8377;150</p>
+            <p class="discounted-price">&#8377;300</p>
+            <p class="description">Size (12 X 36), Resolution (300dpi), Total PSD (50 PSD), 13.6 GB</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=+917094609411&text=Hi...! AMMU CREATION - Buy - Group ( 5 ) PSD..!" target="_blank">
+                    <button>Buy Now</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1IeyZ25XOrgDEywYSa9vaHdnaTSf3k-E3/view" target="_blank">
+                    <button>PDF Demo</button>
+                </a>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <div class="contact-details">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone-alt"></i> Phone: +91 70946 09411</p>
+        <p><i class="fas fa-envelope"></i> Email: ammucreation.in@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 53/9, 1st Floor Ragamania Complex, Subramaniya Swamy Koil Street, Landmark: SBI Town Branch, Opp. Tindivanam, Tamil Nadu, Pin: 604001</p>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@ammucreation2259/shorts" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/917094609411" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/ammucreation.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vaqu4Oz1XquX18ByAH0U" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+        </div>
+    </div>
+    
+    <footer><br>
+        <p>&copy; 2025 AMMU CREATION. All rights reserved.</p>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button><br><br>
+    </footer>
+</body>
+</html>
